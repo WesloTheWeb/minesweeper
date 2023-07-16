@@ -52,11 +52,20 @@ export const gameSlice = createSlice({
             state.grid = grid;
         },
 
-        // other reducers
+        revealTile: (state, action: PayloadAction<{ rowIndex: number; colIndex: number }>) => {
+            const { rowIndex, colIndex } = action.payload;
+            state.grid[rowIndex][colIndex].isRevealed = true;
+        },
 
+        flagTile: (state, action: PayloadAction<{ rowIndex: number; colIndex: number }>) => {
+            const { rowIndex, colIndex } = action.payload;
+            state.grid[rowIndex][colIndex].isFlagged = !state.grid[rowIndex][colIndex].isFlagged; // toggle flag
+        },
     },
 });
 
-export const { setDifficulty } = gameSlice.actions;
-
+export const { setDifficulty, revealTile, flagTile } = gameSlice.actions;
 export default gameSlice.reducer;
+
+/* TODO: add additional logic to handle game rules, such as ending the game if a mine is revealed, or 
+revealing all surrounding tiles when a tile with no adjacent mines is clicked.*/

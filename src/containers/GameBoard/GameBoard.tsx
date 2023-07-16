@@ -4,11 +4,9 @@ import TileBlock from '../../components/TileBlock/TileBlock';
 import classes from './GameBoard.module.scss';
 import { revealTile, flagTile } from '../../store/gameSlice';
 
-const { gameBoard_Easy, gameBoard_Casual, gameBoard_Standard, gameBoard_Hard } = classes;
-
 const GameBoard = ({ }) => {
 
-    const { grid } = useSelector((state: RootState) => state.game);
+    const { grid, difficulty } = useSelector((state: RootState) => state.game);
     const dispatch = useDispatch();
 
     const handleLeftClick = (rowIndex: number, colIndex: number) => {
