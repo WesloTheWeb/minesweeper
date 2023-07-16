@@ -1,5 +1,6 @@
-import ModeSelector from './components/ModeSelector/ModeSelector'
-import './App.scss'
+import ModeSelector from './components/ModeSelector/ModeSelector';
+import './App.scss';
+import TileBlock from './components/TileBlock/TileBlock';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div>
        <ModeSelector />
       </div>
+      <TileBlock />
 
     </>
   )

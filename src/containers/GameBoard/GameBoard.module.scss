@@ -1,0 +1,19 @@
+.gameBoard_Easy {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.gameBoard_Casual {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.gameBoard_Standard {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.gameBoard_Hard {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+}

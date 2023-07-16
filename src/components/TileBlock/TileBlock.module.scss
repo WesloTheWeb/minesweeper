@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+button {
+  cursor: pointer;
+}
+ 
+.tile {
+  padding: 1.5rem;
+  border: 3px solid $tileBorderColor;
+}
+
+.adjacent-1 {
+  color: $oneAdjacent;
+}
+
+.adjacent-2 {
+  color: $twoAdjacent;
+}
+
+.adjacent-3 {
+  color: $threeAdjacent;
+}
+
+.adjacent-4 {
+  color: $fourAdjacent;
+}
+
+.adjacent-5 {
+  color: $fiveAdjacent;
+}
+
+.adjacent-6 {
+  color: $sixAdjacent;
+}
+
+.adjacent-7 {
+  color: $sevenAdjacent;
+}
+.revealed {
+  /* styles for a revealed tile */
+}
