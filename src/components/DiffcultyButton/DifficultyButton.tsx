@@ -12,7 +12,7 @@ const DifficultyButton = ({ title, mode }: DifficultyButtonProps) => {
 
     return (
         <button className={buttonpProperties}>
-            {title}
+            {title} - {mode}
         </button>
     );
 };
