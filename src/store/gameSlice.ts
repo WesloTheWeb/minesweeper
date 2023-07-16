@@ -2,13 +2,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Tile, generateEmptyGrid, placeMines, calculateAdjacentMines } from '../helpers/helpers';
 
 interface GameState {
-    difficulty: 'Easy' | 'Casual' | 'Standard' | 'Hard';
+    difficulty: 'Easy' | 'Casual' | 'Standard' | 'Hard' | null;
     grid: Tile[][];
 }
 
 // Initial game state
 const initialState: GameState = {
-    difficulty: 'Easy',
+    difficulty: null,
     grid: [],
 };
 

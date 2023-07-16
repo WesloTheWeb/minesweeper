@@ -6,10 +6,7 @@ import App from './App.tsx'
 import './index.scss'
 import { setDifficulty } from './store/gameSlice'; // Test import for logging.
 
-
 store.subscribe(() => console.log(store.getState())); // This line logs the state changes
-store.dispatch(setDifficulty('Casual'));
-
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

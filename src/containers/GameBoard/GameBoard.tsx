@@ -4,6 +4,8 @@ import TileBlock from '../../components/TileBlock/TileBlock';
 import classes from './GameBoard.module.scss';
 import { revealTile, flagTile } from '../../store/gameSlice';
 
+// TODO: Need to make gameboard fit browser, might need to scale down on size.
+
 const GameBoard = ({ }) => {
 
     const { grid, difficulty } = useSelector((state: RootState) => state.game);

@@ -1,9 +1,11 @@
-import ModeSelector from './components/ModeSelector/ModeSelector';
+import { useSelector } from 'react-redux';
+import { RootState } from './store/store';
 import './App.scss';
-import TileBlock from './components/TileBlock/TileBlock';
-
+import ModeSelector from './components/ModeSelector/ModeSelector';
+import GameBoard from './containers/GameBoard/GameBoard';
 
 function App() {
+  const { difficulty } = useSelector((state: RootState) => state.game);
 
   return (
     <>
@@ -15,12 +17,11 @@ function App() {
         </p>
       </section>
       <div>
-       <ModeSelector />
+        <ModeSelector />
       </div>
-      <TileBlock />
-
+      {difficulty !== null && <GameBoard />}
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,6 +1,7 @@
 .gameBoard_Easy {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    margin: 3rem;
 }
 
 .gameBoard_Casual {

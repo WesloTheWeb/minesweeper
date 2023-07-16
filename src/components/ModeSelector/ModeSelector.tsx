@@ -3,6 +3,8 @@ import classes from './ModeSelector.module.scss';
 
 const { availableModeContainer } = classes;
 
+// TODO: Fix Button CSS sizing
+
 const ModeSelector = ({ }) => {
     return (
         <section className={availableModeContainer}>

@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './TileBlock.module.scss';
 
+// TODO: Fix TileBlock Squares CSS
+
 interface TileProps {
     isMine: boolean;
     isRevealed: boolean;
