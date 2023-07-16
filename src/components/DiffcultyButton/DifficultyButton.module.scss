@@ -1,10 +1,13 @@
-.buttonpProperties {
+.buttonProperties {
     display: block;
     cursor: pointer;
-    padding: 1rem .5rem;
     font-weight: bold;
     font-size: 1.75rem;
     border-radius: 10px;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem .75rem;
+
 
     &:hover {
         background-color: darkgray;

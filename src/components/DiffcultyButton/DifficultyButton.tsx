@@ -2,6 +2,8 @@ import { useDispatch } from 'react-redux';
 import { setDifficulty } from '../../store/gameSlice';
 import classes from './DifficultyButton.module.scss';
 
+const { buttonProperties } = classes;
+
 interface DifficultyButtonProps {
     title: 'Easy' | 'Casual' | 'Standard' | 'Hard'; // being specific of types
     mode: string;
@@ -16,8 +18,8 @@ const DifficultyButton = ({ title, mode }: DifficultyButtonProps) => {
     };
 
     return (
-        <button 
-            className={classes.buttonProperties} 
+        <button
+            className={buttonProperties}
             onClick={handleButtonClick}
         >
             {title} - {mode}
