@@ -23,9 +23,9 @@ export const gameSlice = createSlice({
 
             switch (state.difficulty) {
                 case 'Easy':
-                    gridRows = 8;
-                    gridCols = 8;
-                    numMines = 10
+                    gridRows = 4;
+                    gridCols = 4;
+                    numMines = 2
                     break;
                 case 'Casual':
                     gridRows = 16;
