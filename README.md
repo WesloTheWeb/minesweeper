@@ -15,7 +15,7 @@ Open [http://localhost:5173/](http://localhost:5173/) with your browser to see t
 ## Developer Note
 I am icing this project as of July 21st, 2023. The purporse of this project was for more TypeScript practice and Redux (RTK) with TS.
 
-The only thing that renders is the gameboard but wranglign the CSS is troublesome and I am not a gamedev. 
+The only thing that renders is the gameboard but wrangling the CSS is troublesome and I am not a gamedev. 
 
 Maybe I will come back to this but my time is better suited for more full-stack projects. 
 
